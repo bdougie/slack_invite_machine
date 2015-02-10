@@ -1,4 +1,6 @@
 var SlackAutoInviter = require('slack-typeform-inviter');
+var dotenv = require('dotenv');
+dotenv.load();
 
 var inviter = new SlackAutoInviter({
     typeformUID: process.env.TYPEFORM_UID,
